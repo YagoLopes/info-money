@@ -19,7 +19,14 @@ const ConnectionList: React.FC = () => {
       >
         <Connections>
           <header>
-            <strong>CONNECTIONS</strong>
+            <div>
+              <input type="radio" id="Compra" name="drone" value="C" />
+              <label htmlFor="Compra">Compra</label>
+            </div>
+            <div>
+              <input type="radio" id="Venda" name="drone" value="V" />
+              <label htmlFor="Venda">Venda</label>
+            </div>
             <button type="button" onClick={toggleCreateModalOpen}>
               <FiPlusCircle />
             </button>

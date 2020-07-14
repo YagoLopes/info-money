@@ -3,10 +3,8 @@ import { render } from 'react-dom'
 import Modal from 'react-modal'
 import { ThemeProvider } from 'styled-components'
 
-import CodeView from './components/CodeView'
-import Connection from './components/Connection'
-import ConnectionDetails from './components/ConnectionDetails'
-import ConnectionList from './components/ConnectionList'
+import StockDetails from './components/ConnectionDetails'
+import StockList from './components/ConnectionList'
 import Header from './components/Header'
 import AppProvider from './context'
 import { GlobalStyle } from './styles/GlobalStyle'
@@ -22,11 +20,8 @@ const App = () => {
         <Container>
           <Header />
           <Content>
-            <ConnectionList />
-            <Connection>
-              <ConnectionDetails />
-              <CodeView />
-            </Connection>
+            <StockList />
+            <StockDetails />
           </Content>
         </Container>
       </AppProvider>
